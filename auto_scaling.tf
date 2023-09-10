@@ -9,7 +9,6 @@ resource "aws_autoscaling_group" "autoscalingroup" {
   desired_capacity   = 2
   max_size           = 10
   min_size           = 1
-
   launch_template {
     id      = aws_launch_template.mylaunchtemplate.id
     version = "$Latest"
